@@ -7,5 +7,60 @@
 </head>
 <body>
     <h1>Switch Statement</h1>
+
+    <button type="button" class="btn btn-success" onclick="teamRank()">Rank</button>
+
+    <script>
+        let team = "Green"; //string
+        let teamName;
+
+        switch (team) {
+            case "Green":
+                alert("Go Green Hornets!");
+                break;
+
+            case "Blue":
+                alert("Go Blue Bears!");
+                break;
+
+            case "Red":
+                alert("Go Red Bulldogs!");
+                break;
+
+            case "Yellow":
+                alert("Go Yellow Tigers!");
+                break;
+
+            default:
+                alert("Unknown Team");
+        }
+
+        function teamRank(){
+            let rank = "1st";
+            let message;
+
+            switch (rank) {
+                case "1st":
+                    message = "Champion!";
+                    break;
+                case "2nd":
+                    message = "Runner-up!";
+                    break;
+                case "3rd":
+                    message = "Third Place!";
+                    break;
+                case "4th":
+                    message = "Fourth Place!";
+                    break;
+                default:
+                    message = "Ranking not found!";
+                    break;
+            }
+
+            alert(message);
+        }
+
+    </script>
+
 </body>
 </html>
